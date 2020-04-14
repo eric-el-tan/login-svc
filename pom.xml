@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eric</groupId>
-	<artifactId>service</artifactId>
+	<artifactId>login-svc</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
-	<name>service</name>
+	<name>login-svc</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
