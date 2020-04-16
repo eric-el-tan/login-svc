@@ -90,7 +90,7 @@ erictan@erictan /v/l/g/a/login-svc> docker logs login-svc --tail 1000
 docker exec -it login-svc /bin/bash
 
 
-# Kubenetes 
+# Kubernetes 
 
 https://www.youtube.com/watch?v=UWg3ORRRF60
 
@@ -99,24 +99,81 @@ https://www.edureka.co/blog/install-kubernetes-on-ubuntu
 1. Pre-requisites to install Kubernetes
 	
 ```bash
-		$ sudo su
-		'# apt-get update
+	$ sudo su
+	# apt-get update
 ```		
-		Turn Off Swap Space
+Turn Off Swap Space
 
 ```bash
-		'# swapoff -a
-		'# nano /etc/fstab
+	# swapoff -a
+	# nano /etc/fstab
+	# UUID=...
 ```
 
-		Update the hostname
+Update the hostname
 		
 ```bash
-		'# nano /etc/hostname
-		'# 
+	# nano /etc/hostname
+	kmaster
 ```		
 
+Update The Hosts File With IPs Of Master & Node
+```bash
+	# ifconfig
+	enp0s3
+		inet addr: 10.0.2.15
+		
+	# nano /etc/hosts
+	10.0.2.15	kmaster
+	10.0.2.??	knode
+	
+```
+Setting Static IP Addresses
+```bash
+	# nano /etc/network/interfaces
+	
+	auto enp0s8
+	iface enp0s8 inet static
+	address <IP-Address-Of-VM>
+```
 2. Setting up Kubernetes environment
 3. Installing Kubeadm, Kubelet, Kubectl
 4. Starting the Kubernetes cluster from master
 5. Getting the nodes to join the cluster
+
+
+
+
+'# intefaces (5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+
+---------------------------------------------
+	New Ubuntu
+---------------------------------------------
+
+	screen resolution 1280 x 800 -> display
+		
+	smaller menu icon -> appearence
+
+	copy and paste		https://askubuntu.com/posts/792833/revisions
+		Updates
+		Make sure you have the latest version of VirtualBox.
+		It might be good to first sudo apt update and sudo apt upgrade and restart if needed.
+		Guest Additions
+		Power on virtual machine
+		Click "Devices" on the VirtualBox menu at the top of the screen
+		Click "Install Guest Additions CD Image..."
+		Follow the on-screen prompts as needed, enter your password, etc.
+		Restart the virtual machine
+		Enable features
+		Machine -> Settings -> General -> Advanced -> enable Shared Clipboard and/or Drag'n'Drop.
+		Make sure View -> Auto-resize Guest Display is checked.
+	
+	can network
+	
+	can usb
+	
+	
+	
