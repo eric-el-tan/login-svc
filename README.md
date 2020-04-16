@@ -5,6 +5,7 @@ This is the backend of the android project
 # development history
 
 
+# docker
 https://dzone.com/articles/deploying-spring-boot-on-docker
 
 
@@ -50,6 +51,7 @@ docker logs login-svc --tail 1000
 
 erictan@erictan /v/l/g/a/login-svc> docker logs login-svc --tail 1000
 
+```log
 			  .   ____          _            __ _ _
 			 /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 			( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -82,7 +84,39 @@ erictan@erictan /v/l/g/a/login-svc> docker logs login-svc --tail 1000
 			2020-04-14 09:36:13.285  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 			2020-04-14 09:36:13.286  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 			2020-04-14 09:36:13.299  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-
+```
 
 
 docker exec -it login-svc /bin/bash
+
+
+# Kubenetes 
+
+https://www.youtube.com/watch?v=UWg3ORRRF60
+
+https://www.edureka.co/blog/install-kubernetes-on-ubuntu
+
+1. Pre-requisites to install Kubernetes
+	
+```bash
+		$ sudo su
+		'# apt-get update
+```		
+		Turn Off Swap Space
+
+```bash
+		'# swapoff -a
+		'# nano /etc/fstab
+```
+
+		Update the hostname
+		
+```bash
+		'# nano /etc/hostname
+		'# 
+```		
+
+2. Setting up Kubernetes environment
+3. Installing Kubeadm, Kubelet, Kubectl
+4. Starting the Kubernetes cluster from master
+5. Getting the nodes to join the cluster
