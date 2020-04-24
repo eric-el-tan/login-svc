@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: login
+
+server:
+  port: 9001
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate: INFO
+    springfox.documentation: INFO
+#    io.swagger: INFO
