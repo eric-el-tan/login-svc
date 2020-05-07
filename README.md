@@ -39,8 +39,8 @@ docker container executed.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.6.RELEASE)
 
-2020-05-07 03:13:15.072  INFO 1 --- [           main] com.eric.service.ServiceApplication      : Starting ServiceApplication v0.1 on 8df168efc468 with PID 1 (/login-svc-0.1.jar started by root in /)
-2020-05-07 03:13:15.080  INFO 1 --- [           main] com.eric.service.ServiceApplication      : No active profile set, falling back to default profiles: default
+2020-05-07 03:13:15.072  INFO 1 --- [           main] com.eric.user.ServiceApplication      : Starting ServiceApplication v0.1 on 8df168efc468 with PID 1 (/login-svc-0.1.jar started by root in /)
+2020-05-07 03:13:15.080  INFO 1 --- [           main] com.eric.user.ServiceApplication      : No active profile set, falling back to default profiles: default
 2020-05-07 03:13:16.885  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2020-05-07 03:13:16.923  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
 2020-05-07 03:13:18.140  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
@@ -67,7 +67,7 @@ docker container executed.
 2020-05-07 03:13:21.758  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 2020-05-07 03:13:21.806  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 2020-05-07 03:13:22.027  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-07 03:13:22.033  INFO 1 --- [           main] com.eric.service.ServiceApplication      : Started ServiceApplication in 7.676 seconds (JVM running for 8.687)
+2020-05-07 03:13:22.033  INFO 1 --- [           main] com.eric.user.ServiceApplication      : Started ServiceApplication in 7.676 seconds (JVM running for 8.687)
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    12  100    12    0     0     29      0 --:--:-- --:--:-- --:--:--    29
