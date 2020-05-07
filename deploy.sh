@@ -12,11 +12,14 @@ echo "docker image built."
 docker run -d -it --name login-svc -p 8080:8080 android/login-svc
 echo "docker container executed."
 # health check
+sleep 10
 docker logs login-svc --tail 1000
+sleep 2
 curl -o out.json http://localhost:8080/login/hello
-cat out.json
+echo $(cat out.json)
 #rm out.json
-curl -o out.json http://localhost:8080/swagger-ui.html#/login
-cat out.json
-echo "docker health checked."
+#sleep 5
+#curl -o out.json http://localhost:8080/swagger-ui.html#/login
+#cat out.json
 rm out.json
+echo "docker health checked."
