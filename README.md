@@ -4,6 +4,8 @@ This is the backend of the android project
 
 # development history
 
+##
+>sudo docker rm -fr login-svc
 
 ## [docker](https://dzone.com/articles/deploying-spring-boot-on-docker)
 
@@ -31,16 +33,16 @@ Removing intermediate container a49dd79b1cbb
 Successfully built cd54d19b12f8
 Successfully tagged android/login-svc:latest
 ```
-```bash
-docker images
-```
+> docker images
 ```log
 REPOSITORY                        TAG                 IMAGE ID            CREATED             SIZE
 android/login-svc                 latest              cd54d19b12f8        2 minutes ago       682MB
 ```
 ```bash
-docker run -d -it --restart always --name login-svc -p 8080:8080 --net cims-network android/login-svc
+docker run -d -it --name login-svc -p 9001:9001 android/login-svc
+---not used -- docker run -d -it --restart always --name login-svc -p 8080:8080 --net cims-network android/login-svc
 docker logs login-svc --tail 1000
+```
 
 ```log
   .   ____          _            __ _ _

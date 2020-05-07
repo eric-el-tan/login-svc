@@ -37,7 +37,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     private static final String API_DESCRIPTION = "Login module description<div>" +
             "<li>1. Contain resources of commonly used by all services</li>" +
-            "<li>2. with enhancement</li>" +
+            "<li>2. login</li>" +
             "</div>";
     private static final String API_VERSION = "1.0";
     private static final String API_TITLE_SYSTEM = "Android Backend";
@@ -48,7 +48,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     private static final String CONTACT_EMAIL = "eric@org.nz";
     private static final String LICENSE_TEXT = "License";
     private static final String LICENSE_URL = "http://www.apache.org/licenses/LICENSE-2.0";
-    private static final String TERMS_OF_SERVICE_URL = "termsOfServiceUrl";
+    private static final String TERMS_OF_SERVICE_URL = "http://localhost:9001/swagger-ui.html";
 
 
     private ApiInfo apiInfo(){

@@ -3,7 +3,7 @@ spring:
     name: login
 
 server:
-  port: 9001
+  port: 8080
 
 logging:
   level:
@@ -11,4 +11,4 @@ logging:
     org.springframework.web: INFO
     org.hibernate: INFO
     springfox.documentation: INFO
-#    io.swagger: INFO
+    io.swagger: INFO
