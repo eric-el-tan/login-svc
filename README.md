@@ -5,7 +5,7 @@ This is the backend of the android project
 # development history
 
 ##
->sudo docker rm -fr login-svc
+>sudo docker rm -f login-svc
 
 ## [docker](https://dzone.com/articles/deploying-spring-boot-on-docker)
 
