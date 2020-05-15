@@ -78,6 +78,6 @@ docker health checked.
 
 Run under local environment
 ```
-http://localhost:9001/swagger-ui.html
-http://localhost:9001/login/hello
+http://localhost:8080/swagger-ui.html
+http://localhost:8080/login/hello
 ```
