@@ -7,9 +7,10 @@ This is the backend of the android project
 - [Rest-assured](https://www.toolsqa.com/rest-assured-tutorial)
 - [on maven](https://stackoverflow.com/questions/42016076/what-is-the-difference-between-io-rest-assured-vs-jayway-rest-assured)
 - [on baeldung](https://www.baeldung.com/rest-assured-tutorial)
+- [json-server](https://github.com/typicode/json-server), [video](https://www.udemy.com/course/automate-webservices-rest-api-testing-using-java/learn/lecture/5201096#overview)
 
 ## API Documentation
-- [Swagger](https://www.youtube.com/watch?v=scVliTfB3bU&list=PLnBvgoOXZNCN0E_oNPrY1wfPhYIXpKbMS&index=3)
+- [video](https://www.youtube.com/watch?v=scVliTfB3bU&list=PLnBvgoOXZNCN0E_oNPrY1wfPhYIXpKbMS&index=3)
 
 ##
 >sudo docker rm -f login-svc
