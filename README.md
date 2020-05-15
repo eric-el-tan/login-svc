@@ -3,7 +3,10 @@
 This is the backend of the android project
 
 # development history
-
+## REST API Test
+- [Rest-assured](https://www.toolsqa.com/rest-assured-tutorial)
+- [on maven](https://stackoverflow.com/questions/42016076/what-is-the-difference-between-io-rest-assured-vs-jayway-rest-assured)
+- [on baeldung](https://www.baeldung.com/rest-assured-tutorial)
 ##
 >sudo docker rm -f login-svc
 
