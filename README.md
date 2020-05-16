@@ -13,7 +13,8 @@ This is the backend of the android project
 - [video](https://www.youtube.com/watch?v=scVliTfB3bU&list=PLnBvgoOXZNCN0E_oNPrY1wfPhYIXpKbMS&index=3)
 
 ##
->sudo docker rm -f login-svc
+> sudo docker rm -f login-svc
+> mvn clean package -Dmaven.test.skip=true
 
 ## [docker](https://dzone.com/articles/deploying-spring-boot-on-docker)
 
